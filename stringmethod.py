@@ -77,19 +77,3 @@ print(my_str.isalnum())
 #isspace()
 my_str = "   "
 print(my_str.isspace()) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

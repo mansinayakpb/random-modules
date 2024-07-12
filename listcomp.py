@@ -15,3 +15,4 @@ print(palindrome)
 words = ["ant", "apple", "bad", "cross"]
 a_word = [word for word in words if word.startswith('a')]
 print(a_word)
+
