@@ -1,14 +1,18 @@
 #Encapsulation 1
 
 class School:
+    """Represents a school with a name and type."""
+
     def __init__(self, name, type):
         self.name = name
         self.type = type
 
     def get_name(self):
+        """Returns the name of the school."""
         return self.name
     
     def get_type(self):
+        """Returns the type of the school."""
         return self.type
 
 school_1 = School("DPS", "Higher Secondary")
