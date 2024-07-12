@@ -1,4 +1,4 @@
-#inheritance
+#inheritance 1
 class Car:
     """A class representing a car with make, model, and year attributes."""
     
@@ -28,26 +28,9 @@ my_electric_car = ElectricCar("Tesla", "Model S", 2021, 100)
 my_electric_car.display_info()
 my_electric_car.display_battery()
 
-#class and objects
 
-class Students:
-    """A class representing a student with name, age, and student ID attributes."""
-    
-    def __init__(self, name, age, studentid):
-        """Initialize the student with name, age, and student ID."""
-        self.name = name
-        self.age = age
-        self.studentid = studentid
 
-    def information(self):
-        """Return the student's information as a formatted string."""
-        return f"student_name: {self.name}, student_age: {self.age}, student_id: {self.studentid}"
-    
-# Creating an instance of the Students class
-student_1 = Students("Joy", 14, "205116")
-print(student_1.information())
-
-#inheritances
+#inheritance 2
 class Bank:
     def __init__(self, name):
         self.name = name
@@ -62,26 +45,9 @@ class BankName(Bank):
 bank_1 = BankName("SBI")
 print(bank_1.bank_n())
 
-#Encapsulation
 
-class School:
-    def __init__(self, name, type):
-        self.name = name
-        self.type = type
 
-    def get_name(self):
-        return self.name
-    
-    def get_type(self):
-        return self.type
-
-school_1 = School("DPS", "Higher Secondary")
-print(school_1.get_name())
-print(school_1.get_type())
-
-#Polymorphism
-
-#inheritance
+#inheritance 3
 
 class Vehicle:
     def __init__(self, make, model, year):
