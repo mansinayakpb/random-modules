@@ -2,7 +2,8 @@
 
 
 class Students:
-    """A class representing a student with name, age, and student ID attributes."""
+    """A class representing a student with name, age, 
+    and student ID attributes."""
 
     def __init__(self, name, age, studentid):
         """Initialize the student with name, age, and student ID."""
@@ -12,7 +13,8 @@ class Students:
 
     def information(self):
         """Return the student's information as a formatted string."""
-        return f"student_name: {self.name}, student_age: {self.age}, student_id: {self.studentid}"
+        return f"student_name: {self.name}, student_age: {self.age}, 
+        student_id: {self.studentid}"
 
 
 # Creating an instance of the Students class
