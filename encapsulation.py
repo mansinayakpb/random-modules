@@ -1,4 +1,5 @@
-#Encapsulation 1
+# Encapsulation 1
+
 
 class School:
     """Represents a school with a name and type."""
@@ -10,16 +11,18 @@ class School:
     def get_name(self):
         """Returns the name of the school."""
         return self.name
-    
+
     def get_type(self):
         """Returns the type of the school."""
         return self.type
+
 
 school_1 = School("DPS", "Higher Secondary")
 print(school_1.get_name())
 print(school_1.get_type())
 
-#Encapsulation 2
+# Encapsulation 2
+
 
 class BankAccount:
     def __init__(self, owner, balance=0):
@@ -41,7 +44,9 @@ class BankAccount:
     def get_balance(self):
         return self.__balance
 
-#Encapsulation 3
+
+# Encapsulation 3
+
 class Book:
     def __init__(self, title, author):
         self.__title = title

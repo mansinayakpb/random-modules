@@ -6,7 +6,7 @@ def is_prime(number):
         if number % digit == 0:
             return False
     return True
-    
+
 
 def is_armstrong(number):
     """ Function to check if a number is an armstrong number. """
@@ -27,11 +27,14 @@ def cyclic(number):
         number = sum(int(digit) for digit in str(number))
     return number
 
+
 def sum_of_digits(number):
     """ Function to calculate the sum of digits of a number. """
     return sum(int(digit) for digit in str(number))
 
 # Main program
+
+
 while True:
     print("""
     1] check prime

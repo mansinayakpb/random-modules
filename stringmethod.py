@@ -1,79 +1,79 @@
-#capitalize()
+# capitalize()
 my_str = "hello world"
-print(my_str.capitalize())  
+print(my_str.capitalize())
 
-#lower()
+# lower()
 my_str = "Hello World"
-print(my_str.lower())  
+print(my_str.lower())
 
-#upper()
+# upper()
 my_str = "hello world"
-print(my_str.upper())  
+print(my_str.upper())
 
-#title()
+# title()
 my_str = "hello world"
-print(my_str.title())  
+print(my_str.title())
 
-#swapcase()
+# swapcase()
 my_str = "Hello World"
-print(my_str.swapcase())  
+print(my_str.swapcase())
 
-#strip()
+# strip()
 my_str = "  hello world  "
-print(my_str.strip()) 
+print(my_str.strip())
 
-#lstrip()
+# lstrip()
 my_str = "  hello world"
-print(my_str.lstrip()) 
+print(my_str.lstrip())
 
-#rstrip()
+# rstrip()
 my_str = "hello world  "
-print(my_str.rstrip()) 
+print(my_str.rstrip())
 
-#find()
+# find()
 my_str = "hello world"
-print(my_str.find("world"))  
+print(my_str.find("world"))
 
-#rfind()
+# rfind()
 my_str = "hello world world"
-print(my_str.rfind("world"))  
+print(my_str.rfind("world"))
 
-#replace()
+# replace()
 my_str = "hello world"
-print(my_str.replace("world", "there"))  
+print(my_str.replace("world", "there"))
 
-#split()
+# split()
 my_str = "hello world"
-print(my_str.split())  
+print(my_str.split())
 
-#join()
+# join()
 my_list = ["hello", "world"]
-print(" ".join(my_list)) 
+print(" ".join(my_list))
 
-#startswith()
+# startswith()
 my_str = "hello world"
-print(my_str.startswith("hello")) 
+print(my_str.startswith("hello"))
 
-#endswith()
+# endswith()
 my_str = "hello world"
-print(my_str.endswith("world"))  
+print(my_str.endswith("world"))
 
-#count()
+# count()
 my_str = "hello world world"
-print(my_str.count("world"))  
+print(my_str.count("world"))
 
-#isalpha()
+# isalpha()
 my_str = "hello"
-print(my_str.isalpha())  
+print(my_str.isalpha())
 
-#isdigit()
+# isdigit()
 my_str = "12345"
-print(my_str.isdigit())  
+print(my_str.isdigit())
 
-#isalnum()
+# isalnum()
 my_str = "hello123"
-print(my_str.isalnum())  
+print(my_str.isalnum())
 
-#isspace()
+# isspace()
 my_str = "   "
-print(my_str.isspace()) 
+print(my_str.isspace())
