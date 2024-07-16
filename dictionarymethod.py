@@ -1,9 +1,9 @@
-# How do you retrieve the value associated with the key 'name' in the dictionary
+# retrieve the value associated with the key 'name' in the dictionary
 
 dictionary = {"name": "Alice", "age": 25}
 print(dictionary["name"])
 
-# How do you change the value associated with the key 'age' to 26 in the dictionary
+# change the value associated with the key 'age' to 26 in the dictionary
 
 dictionary = {"name": "Alice", "age": 25}
 dictionary["age"] = 26
@@ -65,47 +65,47 @@ dictionary2 = {"city": "New York", "age": 26}
 dictionary.update(dictionary2)
 print(dictionary)
 
-# How do you create a dictionary with keys from 1 to 5 and values equal to the square of the keys?
+# create a dictionary with keys from 1 to 5 and values equal to the square of the keys?
 
 dictionary = {digit: digit**2 for digit in range(1, 6)}
 print(dictionary)
 
-# How do you create a dictionary with keys from the list ['a', 'b', 'c'] and all values set to 0?
+# create a dictionary with keys from the list ['a', 'b', 'c'] and all values set to 0?
 
 dictionary = dict.fromkeys(["a", "b", "c"], 0)
 print(dictionary)
 
-# How do you remove the key 'age' and return its value from the dictionary
+# remove the key 'age' and return its value from the dictionary
 
 dictionary = {"name": "Alice", "age": 25}
 print(dictionary.pop("age"))
 
-# How do you remove and return the last inserted key-value pair from the dictionary
+# remove and return the last inserted key-value pair from the dictionary
 
 dictionary = {"name": "Alice", "age": 25, "city": "New York"}
 last_item = dictionary.popitem()
 print(last_item)
 print(dictionary)
 
-# How do you print all keys in the dictionary using a for loop
+# print all keys in the dictionary using a for loop
 
 dictionary = {"name": "Alice", "age": 25}
 for key in dictionary:
     print(key)
 
-# How do you print all values in the dictionary using a for loop?
+# print all values in the dictionary using a for loop?
 
 ddictionary = {"name": "Alice", "age": 25}
 for value in dictionary.values():
     print(value)
 
-# How do you print all key-value pairs in the dictionary using a for loop?
+# print all key-value pairs in the dictionary using a for loop?
 
 dictionary = {"name": "Alice", "age": 25}
 for key, value in dictionary.items():
     print(key, value)
 
-# How do you retrieve the value 'Math' from the nested dictionary
+# retrieve the value 'Math' from the nested dictionary
 
 dictionary = {
     "student": {
@@ -117,20 +117,20 @@ dictionary = {
 dict_2 = dictionary["student"]["subjects"]["primary"]
 print(dict_2)
 
-# How do you update the value of 'age' to 26 in the nested dictionary
+# update the value of 'age' to 26 in the nested dictionary
 
 dictionary = {"student": {"name": "Alice", "age": 25}}
 dictionary["student"]["age"] = 26
 print(dictionary)
 
-# How do you add a new key 'subjects' with the value {'primary': 'Math', 'secondary': 'Science'}
+# add a new key 'subjects' with the value {'primary': 'Math', 'secondary': 'Science'}
 # to the nested dictionary?
 
 dictionary = {"student": {"name": "Alice", "age": 25}}
 dictionary["student"]["subjects"] = {"primary": "Math", "secondary": "Science"}
 print(dictionary)
 
-# How do you create a deep copy of the nested dictionary
+# create a deep copy of the nested dictionary
 # 1
 
 dictionary = {
@@ -144,6 +144,7 @@ dictionary_copy = dictionary.copy()
 print(dictionary_copy)
 
 # 2
+
 import copy
 
 dictionary = {
