@@ -1,4 +1,4 @@
-# inheritance 1
+# inheritance 
 class Car:
     """A class representing a car with make, model, and year attributes."""
 
@@ -30,7 +30,7 @@ my_electric_car = ElectricCar("Tesla", "Model S", 2021, 100)
 my_electric_car.display_info()
 my_electric_car.display_battery()
 
-# inheritance 2
+# inheritance 
 
 
 class Bank:
@@ -50,7 +50,7 @@ bank_1 = BankName("SBI")
 print(bank_1.bank_n())
 
 
-# inheritance 3
+# inheritance 
 
 
 class Vehicle:
