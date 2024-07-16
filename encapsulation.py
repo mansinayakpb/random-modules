@@ -69,4 +69,6 @@ class Book:
         return self.__is_checked_out
 
     def get_details(self):
-        return f"Title: {self.__title}, Author: {self.__author}, Checked Out: {self.__is_checked_out}"
+        return f"Title: {self.__title}, 
+        Author: {self.__author}, 
+        Checked Out: {self.__is_checked_out}"
