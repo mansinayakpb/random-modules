@@ -1,3 +1,5 @@
+# substraction
+
 class RationalSub:
 
     def __init__(self, num=0, deno=1):
