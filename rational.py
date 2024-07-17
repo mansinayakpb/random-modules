@@ -17,19 +17,7 @@ class RationalAdd:
         return tem
 
     def show(self, value, tem):
-        print(
-            self.num,
-            "/",
-            self.deno,
-            "+",
-            value.num,
-            "/",
-            value.deno,
-            "=",
-            tem.num,
-            "/",
-            tem.deno,
-        )
+        print(self.num, "/",self.deno,"+",value.num,"/",value.deno,"=",tem.num,"/",tem.deno,)
 
 
 rational_1 = RationalAdd()
