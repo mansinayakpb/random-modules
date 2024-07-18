@@ -49,24 +49,13 @@ divided = map(division, divide)
 
 print(list(divided))
 
+
 # map 5
 
 
-def add(a, b):
-
-     return b - a
-div = [1, 3, 5, 6, 7]
-
-addition = map(add, div)
-
-print(list(addition))
-
-# gfggy
-
-
-# Define a function to subtract two numbers
 def subtract(a, b):
     return b - a
+
 
 # List of numbers
 
@@ -82,4 +71,57 @@ differences = map(lambda pair: subtract(pair[0], pair[1]), pairs)
 # Convert the map object to a list to see the results
 print(list(differences))
 
+# map 6
 
+
+def mapping(num):
+    return num**2
+
+
+number = [1, 2, 3, 4, 5]
+
+define = map(mapping, number)
+
+square_the_value = list(define)
+print(square_the_value)
+
+# map 7
+
+integers = ["1", "2", "3", "4", "5"]
+
+convert = map(int, integers)
+
+lists = list(convert)
+print(lists)
+
+# lambda
+
+digit = lambda num: num + 10
+print(digit(5))
+
+# lambda 1
+
+digit = lambda num: num - 10
+print(digit(5))
+
+# lambda 2 
+
+digit = lambda num1, num2: num1 * num2
+num1 = int(input("enter the num1...  "))
+num2 = int(input("enter the num2...  "))
+print(digit(num1, num2))
+
+# lambda 3
+
+digit = lambda num1, num2: num1 / num2
+num1 = int(input("enter the num1..  "))
+num2 = int(input("enter the num2..  "))
+print(digit(num1, num2))
+
+# map and lambda
+
+numbers = [1, 2, 3, 4, 5]
+squared_the_values = map(lambda num: num**2, numbers)
+print(list(squared_the_values))
+
+# 

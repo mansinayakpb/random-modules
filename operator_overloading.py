@@ -1,5 +1,5 @@
 # final
-class RationalAdd:
+class RationalNum:
 
     def __init__(self, num=0, deno=1):
         self.num = num
@@ -11,28 +11,28 @@ class RationalAdd:
 
     def __add__(self, value):
         if type(self) is type(value):
-            tem = RationalAdd()
+            tem = RationalNum()
             tem.deno = self.deno * value.deno
             tem.num = self.num * value.deno + value.num * self.deno
             return tem
 
-    def subtract(self, value):
+    def __sub__(self, value):
         if type(self) is type(value):
-            tem = RationalAdd()
+            tem = RationalNum()
             tem.deno = self.deno * value.deno
             tem.num = self.num * value.deno - value.num * self.deno
             return tem
 
-    def multiply(self, value):
+    def __mul__(self, value):
         if type(self) is type(value):
-            tem = RationalAdd()
+            tem = RationalNum()
             tem.num = self.num * value.num
             tem.deno = self.deno * value.deno
             return tem
 
-    def divide(self, value):
+    def __truediv__(self, value):
         if type(self) is type(value):
-            tem = RationalAdd()
+            tem = RationalNum()
             tem.num = self.num * value.deno
             tem.deno = self.deno * value.num
             return tem
@@ -55,14 +55,13 @@ def operation_menu(rational_1, rational_2, operation):
             rational_2.get_value()
         elif choice == "2":
             if operation == "add":
-                # result = rational_1.add(rational_2)
                 result = rational_1 + rational_2
             elif operation == "subtract":
-                result = rational_1.subtract(rational_2)
+                result = rational_1 - rational_2
             elif operation == "multiply":
-                result = rational_1.multiply(rational_2)
+                result = rational_1 * rational_2
             elif operation == "divide":
-                result = rational_1.divide(rational_2)
+                result = rational_1 / rational_2
             rational_1.show(operation, rational_2, result)
         elif choice == "3":
             print("Returning to main menu.")
@@ -70,8 +69,8 @@ def operation_menu(rational_1, rational_2, operation):
 
 
 def menu():
-    rational_1 = RationalAdd()
-    rational_2 = RationalAdd()
+    rational_1 = RationalNum()
+    rational_2 = RationalNum()
     while True:
         print(
             "\n1. Rational Addition\n2. Rational Subtraction\n3. Rational Multiplication\n4. Rational Division\n5. Exit"
