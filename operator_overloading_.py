@@ -46,13 +46,14 @@ class RationalNum:
 
         return num1
 
-    def simplify(self, num1, num2):
-        hcf = self.get_hcf(num1, num2)
-        return num1 // hcf, num2 // hcf
+    def simplify(self, num, deno):
+        hcf = self.get_hcf(num, deno)
+        return num // hcf, deno // hcf
 
     def show(self, operator, value, result):
         self.num, self.deno = self.simplify(self.num, self.deno)
         value.num, value.deno = self.simplify(value.num, value.deno)
+        result.num, result.deno = self.simplify(result.num, result.deno)
         print(
             f"{self.num}/{self.deno} {operator} {value.num}/{value.deno} = {result.num}/{result.deno}"
         )
