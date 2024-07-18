@@ -135,7 +135,7 @@ filter_out = map(lambda num: num**2, filter(lambda num: num % 2 == 0, number))
 
 print(list(filter_out))
 
-# take input from user
+# take input from users
 
 
 def get_input():
@@ -158,3 +158,4 @@ squared_num = map(squared, numbers)
 filter_even = filter(is_even, squared_num)
 
 print(list(filter_even))
+
