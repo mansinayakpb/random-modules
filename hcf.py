@@ -1,24 +1,26 @@
-# number_1 = int(input("enter the number... "))
-# number_1 = int(input("enter the number... "))
-# number_2 = int(input("enter the other number... "))
+# hcf
 
-# if number_2 > number_1:
-#     minimum = number_1
+def get_hcf(num1, num2):
+    while (num2 != 0):
+        remain = num1 % num2
+        num1 = num2
+        num2 = remain
+    return num1
 
-# else:
-#     minimum = number_2
 
-p = int(input("enter the number... "))
-q = int(input("enter the number... "))
+def simplify(num1, num2):
+    hcf = get_hcf(num1, num2)
+    simplified_num1 = num1 // hcf
+    simplified_num2 = num2 // hcf
+    return simplified_num1, simplified_num2, hcf
 
-while (q != 0):
 
-    r = p % q
-    p = q
-    q = r
+num1 = int(input("enter the num... "))
+num2 = int(input("enter the deno... "))
 
-print(p)
-print(q)
-print(r)
+simplified_num, simplified_deno, hcf = simplify(num1, num2)
+print(f"{simplified_num}/{simplified_deno}")
+
+print(f"hcf : {hcf}")
 
     
