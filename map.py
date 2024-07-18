@@ -49,29 +49,7 @@ divided = map(division, divide)
 
 print(list(divided))
 
-
 # map 5
-
-
-def subtract(a, b):
-    return b - a
-
-
-# List of numbers
-
-
-numbers = [1, 3, 5, 6, 7]
-
-# Use zip to create pairs of consecutive elements
-pairs = zip(numbers[:-1], numbers[1:])
-
-# Use map to apply the subtract function to each pair
-differences = map(lambda pair: subtract(pair[0], pair[1]), pairs)
-
-# Convert the map object to a list to see the results
-print(list(differences))
-
-# map 6
 
 
 def mapping(num):
@@ -85,7 +63,7 @@ define = map(mapping, number)
 square_the_value = list(define)
 print(square_the_value)
 
-# map 7
+# map 6
 
 integers = ["1", "2", "3", "4", "5"]
 
@@ -124,4 +102,59 @@ numbers = [1, 2, 3, 4, 5]
 squared_the_values = map(lambda num: num**2, numbers)
 print(list(squared_the_values))
 
-# 
+# filter even
+
+
+def is_even(num):
+    return num % 2 == 0
+
+
+numbers = [1, 2, 3, 4, 5]
+filter_out = filter(is_even, numbers)
+
+print(list(filter_out))
+
+# filter odd
+
+
+def is_odd(num):
+    return num % 2 != 0
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+filter_out = filter(is_odd, numbers)
+
+print(list(filter_out))
+
+
+# filter out squared even number
+
+
+number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+filter_out = map(lambda num: num**2, filter(lambda num: num % 2 == 0, number))
+
+print(list(filter_out))
+
+# take input from user
+
+
+def get_input():
+    user_input = input("enter numbers separated by spaces  ")
+    return list(map(int, user_input.split()))
+
+
+def squared(num):
+    return num ** 2
+
+
+def is_even(num):
+    return num % 2 == 0
+
+
+numbers = get_input()
+
+squared_num = map(squared, numbers)
+
+filter_even = filter(is_even, squared_num)
+
+print(list(filter_even))
