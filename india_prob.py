@@ -1,3 +1,4 @@
+# word count
 
 with open('INDIA.TXT', 'r') as file:
     content = file.read()
