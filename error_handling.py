@@ -1,4 +1,4 @@
-# error 
+# error handling
 
 def division_num():
     try:
