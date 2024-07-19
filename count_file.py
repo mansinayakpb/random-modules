@@ -1,4 +1,4 @@
-
+# count 
 
 with open('countchar.txt', 'r') as file:
     content = file.read()
