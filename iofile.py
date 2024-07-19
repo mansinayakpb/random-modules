@@ -1,4 +1,4 @@
-# write
+# convert uppercase txt file to lowercase txt file
 
 
 with open('input.txt', 'w') as file:
