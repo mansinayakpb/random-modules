@@ -1,4 +1,5 @@
 # Read
+
 # read a single line from the file
 
 file = open('file7.txt', 'r')
